@@ -1,0 +1,44 @@
+# FOLDERS
+.mixin.out/
+.probe/
+.vscode/
+coremods/
+crash-reports/
+debug/
+downloads/
+ESM/
+journeymap/
+local/
+logs/
+mods/*
+!mods/exitiantweaks-1.0.0.jar
+resourcepacks/
+saves/
+screenshots/
+server-resource-packs/
+shaderpacks/
+texturepacks/
+
+# TODO:
+# implement default minemenu
+minemenu/
+
+# FILES
+command_history.txt
+emi.json
+knownkeys.txt
+options.txt
+realms_persistence.json
+TrashSlotSaveState.json
+usercache.json
+usernamecache.json
+
+# ignore client-side configs
+# Also to not override client options on updating
+**/config/**/*[cC][lL][iI][eE][nN][tT]*.*
+config/ctm.toml
+config/embeddium*
+config/emi.css
+config/NoChatReports/NCR-Encryption.json
+config/packetfixer.properties
+.probe

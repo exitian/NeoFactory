@@ -1,0 +1,46 @@
+const GT_ORES_DIKE = {
+	scheelite_vein: {
+		clusterSize: [32, 40],
+		density: 0.7,
+		weight: 20,
+		layer: "ENDSTONE",
+		heightRangeU: [20, 60],
+	},
+	beryllium_vein: {
+		clusterSize: [32, 40],
+		density: 0.75,
+		weight: 30,
+		layer: "NETHERRACK",
+		heightRangeU: [5, 30],
+	},
+	manganese_vein: {
+		clusterSize: [32, 40],
+		density: 0.75,
+		weight: 20,
+		layer: "NETHERRACK",
+		heightRangeU: [20, 30],
+	},
+	garnet_vein: {
+		clusterSize: [32, 40],
+		density: 0.75,
+		weight: 40,
+		layer: "STONE",
+		heightRangeU: [-10, 50],
+	},
+	lapis_vein: {
+		clusterSize: [35, 60],
+		density: 0.75,
+		weight: 60,
+		layer: "DEEPSLATE",
+		heightRangeU: [-190, -90],
+	},
+	manganese_vein_ow: {
+		clusterSize: [50, 64],
+		density: 0.75,
+		weight: 20,
+		layer: "DEEPSLATE",
+		heightRangeU: [-190, 64],
+		// minYLevel: -50,
+		// maxYLevel: -5,
+	},
+};
