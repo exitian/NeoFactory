@@ -1,0 +1,30 @@
+            - name: Modrinth Release
+  # You may pin to the exact commit or the version.
+  # uses: dsx137/modrinth-release-action@ac274627b02576e565e494d8ab4f522509b8b35e
+  uses: dsx137/modrinth-release-action@1.0.0
+  with:
+    # The Modrinth project ID
+    project_id: 
+    # The version number. Ideally will follow semantic versioning
+    version_number: 
+    # The game versions this mod is compatible with
+    game_versions: 
+    # The files to upload
+    files: 
+    # The name of this version. Defaults to version number.
+    name: 
+    # The loaders this version is compatible with.
+    loaders: 
+    # The changelog for this version. Defaults to "Initial release."
+    changelog: # optional
+    # The dependencies for this version. Defaults to none.
+    dependencies: # optional, default is []
+    # The type of version. Defaults to release.
+    version_type: # optional, default is release
+    # Whether this version should be featured. Defaults to false.
+    featured: # optional, default is false
+    # The status of this version.
+    status: # optional
+    # The requested status of this version.
+    requested_status: # optional
+          
