@@ -1,0 +1,5 @@
+{
+  "enableCannibalism": true,
+  "playerDropFlesh": true,
+  "knifeDropFlesh": true
+}

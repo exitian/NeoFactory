@@ -1,5 +1,5 @@
-// priority: 0
-// All wood ID's. Rubber at the top is from gregtech but add exception in the function.
+// priority: 100
+
 const VERBOSE = false;
 const GT = "gtceu";
 
@@ -19,21 +19,7 @@ const WOODTYPES = [
 ];
 
 // excludes ulv and max
-const VOLTAGE_TIERS = [
-	"lv",
-	"mv",
-	"hv",
-	"ev",
-	"iv",
-	"luv",
-	"zpm",
-	"uv",
-	"uhv",
-	/* 	"uev",
-	"uiv",
-	"uxv",
-	"opv", */
-];
+const VOLTAGE_TIERS = ["lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv"];
 
 const CRCTS = {
 	lv: "#gtceu:circuits/lv",
@@ -51,7 +37,7 @@ const CABLE_TIERS = {
 	lv: "tin",
 	mv: "copper",
 	hv: "gold",
-	ev: "aluminum",
+	ev: "aluminium",
 	iv: "platinum",
 	luv: "niobium_titanium",
 	zpm: "vanadium_gallium",
@@ -114,6 +100,8 @@ const REMOVE_BY_REGEX = [
 	/minecraft:(\w+trapdoor)(\w+)?/,
 	/utilitarian:utility\/\w+/,
 ];
+
+const REMOVE_BY_MOD = ["bigger_ae2"];
 
 // Enforce gamerules
 const GAMERULES = [

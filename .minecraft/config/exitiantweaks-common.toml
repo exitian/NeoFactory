@@ -1,0 +1,16 @@
+#Speed of the minecart.
+#Default: 2
+#Range: 1.0 ~ 20.0
+minecartMaxSpeed = 3.0
+#Height of the heart and armor bar offset.
+#Default: 6
+#Range: -50 ~ 50
+leftBarHeightOffset = 6
+#Height of the food bar offset.
+#Default: 6
+#Range: -50 ~ 50
+rightBarHeightOffset = 6
+#Whether to allow the nether portal from building
+#Default: false
+allowNetherPortalForming = false
+

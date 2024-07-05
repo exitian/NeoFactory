@@ -2,6 +2,7 @@
 .mixin.out/
 .probe/
 .vscode/
+backups/
 coremods/
 crash-reports/
 debug/
@@ -41,4 +42,5 @@ config/embeddium*
 config/emi.css
 config/NoChatReports/NCR-Encryption.json
 config/packetfixer.properties
+config/entityculling.json
 .probe

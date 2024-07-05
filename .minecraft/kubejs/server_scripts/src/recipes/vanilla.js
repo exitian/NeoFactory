@@ -9,6 +9,7 @@ ServerEvents.recipes((event) => {
 			modid = VANILLA_ID;
 		}
 		outputid = `3x ${modid}:${element}_fence`;
+		event.remove({ id: `${VANILLA_ID}:${element}_fence` });
 		event
 			.shaped(outputid, ["ada", "cbc", "aba"], {
 				a: "gtceu:long_wood_rod",
@@ -27,6 +28,7 @@ ServerEvents.recipes((event) => {
 			modid = VANILLA_ID;
 		}
 		outputid = `2x ${modid}:${element}_trapdoor`;
+		event.remove({ id: `${VANILLA_ID}:${element}_fence` });
 		event
 			.shaped(outputid, [" ab", "cdc", "  b"], {
 				a: "gtceu:long_wood_rod",
@@ -54,8 +56,4 @@ ServerEvents.recipes((event) => {
 		b: KNVE,
 		c: "#minecraft:logs",
 	});
-});
-
-ServerEvents.tags("biome", (event) => {
-	event.removeAll("ae2:has_meteorites");
 });

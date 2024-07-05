@@ -9,7 +9,7 @@ PlayerEvents.tick((event) => {
 		event.player.inventory.items.forEach((item) => {
 			if (item.enchanted || item.id == "minecraft:enchanted_book") {
 				item.count--;
-				event.player.runCommand(
+				event.player.runCommandSilent(
 					'title @p actionbar "Enchantments are not allowed!"'
 				);
 			}
@@ -18,6 +18,7 @@ PlayerEvents.tick((event) => {
 		//gives climate clemency
 		let armorslots = ["feet", "chest", "head", "legs"];
 		let boolSet = [];
+        
 		armorslots.forEach((element) => {
 			boolSet.push(
 				event.player.getItemBySlot(element).hasTag("gtceu:ppe_armor")

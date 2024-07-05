@@ -1,0 +1,52 @@
+
+[BlackListSettings]
+	#Prevents mobs spawners from being placed into cardboard boxes
+	BlackListMobSpawners = true
+
+#Auto generated list of block entities registered in Minecraft that can be blocked from use with the box. If a block entity does not show up on this list it is already black listed. The reasoning behind blocking block entities is to prevent crashes or unwanted interaction. Such as picking up a piston which can both causes issues and doesn't really matter. Set value to 'true' to disable interaction.
+[tile_ban_list]
+	"minecraft:chest" = false
+	"minecraft:piston" = false
+	"minecraft:barrel" = false
+	"minecraft:decorated_pot" = false
+	"minecraft:trial_spawner" = false
+	"minecraft:skull" = false
+	"minecraft:enchanting_table" = false
+	"minecraft:banner" = false
+	"minecraft:bell" = false
+	"minecraft:sculk_catalyst" = false
+	"minecraft:end_portal" = false
+	"minecraft:end_gateway" = false
+	"minecraft:structure_block" = false
+	"minecraft:ender_chest" = false
+	"minecraft:smoker" = false
+	"minecraft:campfire" = false
+	"minecraft:dropper" = false
+	"minecraft:vault" = false
+	"minecraft:shulker_box" = false
+	"minecraft:sculk_shrieker" = false
+	"minecraft:dispenser" = false
+	"minecraft:lectern" = false
+	"minecraft:daylight_detector" = false
+	"minecraft:calibrated_sculk_sensor" = false
+	"minecraft:brewing_stand" = false
+	"minecraft:sculk_sensor" = false
+	"minecraft:furnace" = false
+	"minecraft:jukebox" = false
+	"minecraft:bed" = false
+	"minecraft:hanging_sign" = false
+	"minecraft:beehive" = false
+	"minecraft:crafter" = false
+	"minecraft:brushable_block" = false
+	"minecraft:conduit" = true
+	"minecraft:comparator" = false
+	"minecraft:chiseled_bookshelf" = false
+	"minecraft:sign" = false
+	"minecraft:command_block" = false
+	"minecraft:mob_spawner" = false
+	"minecraft:blast_furnace" = false
+	"minecraft:trapped_chest" = false
+	"minecraft:hopper" = false
+	"minecraft:beacon" = false
+	"minecraft:jigsaw" = false
+

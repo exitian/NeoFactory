@@ -1,0 +1,58 @@
+{
+	chapter.6C839709EA3E392F.chapter_subtitle: [
+		"NEW"
+		"BEGINNINGS"
+	]
+	chapter.6C839709EA3E392F.title: "INITIIS NOVIS"
+	chapter_group.014DAD2F8ACC2792.title: "The beginnings"
+	file.0000000000000001.title: "NeoFactory"
+	quest.10888ACC90B6147C.quest_desc: [
+		"Time is not normal.."
+		""
+		"It is slower than usual and nights are not instantly completed.."
+		""
+		"Maybe a clock is not a stupid idea either.."
+	]
+	quest.1E86D8D33024141D.quest_desc: [
+		"This pack changes quite a few things. Here's a neatly organized list of things to expect."
+		""
+		"The next few chapters around will tell you everything about specific mods."
+		"Some vanilla things that are changed.."
+		""
+		"- &aExperience&r, &denchanting&r&r, and most basic recipes are not vanilla"
+		"- &bDays&r are longerand &1nights&r are even longer.."
+		"- Dimensions are gated.."
+		""
+		"Now go read the other information quests to learn about specific mods."
+	]
+	quest.1E86D8D33024141D.quest_subtitle: "Probably should read this properly.."
+	quest.1E86D8D33024141D.title: "Information"
+	quest.25F006D521266E3D.quest_desc: [
+		"Seasons are here!"
+		""
+		"They'll make sure you stay on your toes with &6warmth&r and &bcoldness&r."
+		""
+		"At-least at the start. The further you go the less you need to care.. At some point not at all! &oBut that's a bit further away..&r"
+		""
+		"I'd reccomend you craft a calendar.."
+		"Maybe later even a sensor to automate stuff!"
+	]
+	quest.25F006D521266E3D.quest_subtitle: "Ayup. Gregtech with seasons!"
+	quest.786FAD970C976F3F.quest_desc: [
+		"Removed are.."
+		""
+		"Enchanting, normal sleep, ores, tools, progression, experience.. all gone."
+		""
+		"At-least world-gen stayed the same.. right?"
+		""
+		""
+		""
+		"right..?"
+	]
+	quest.786FAD970C976F3F.title: "Vanilla changes"
+	reward_table.18CAAE50795CADFC.title: "lmao"
+	task.02461619E0188941.title: "Seasons"
+	task.0735BD7AE9E18D6D.title: "GregTech"
+	task.1CDEAEE974B38E4B.title: "Time"
+	task.39E52876956AB33A.title: "Info"
+}

@@ -1,0 +1,43 @@
+
+[ladders-behavior]
+	#Entities in the list will not be affected by the auto-climb effect from Powered Ladders.
+	#Example: ["entity.minecraft.trader_llama"]
+	entitiesPoweredLadderBlackList = []
+	#The acceleration effect from Iron Ladders will only affect players.
+	enableIronLaddersSpeedMultiplierForPlayersOnly = true
+	#Whether the acceleration effect will work at all.
+	enableIronLaddersSpeedMultiplier = true
+	#Will Power Upgrades work?
+	enablePowerLaddersUpgrade = true
+	#Will Glowing Upgrades work?
+	enableGlowingLaddersUpgrade = true
+	#Will Morphing Upgrades work?
+	enableMorphLaddersUpgrade = true
+	#Will Tier Upgrades work?
+	enableTierLaddersUpgrade = true
+	#The Powered Ladders affect players only?
+	enablePoweredLaddersSpeedMultiplierForPlayersOnly = true
+
+[ladders-settings]
+	#Copper Ladder speed multiplier.
+	#Range: > 0
+	copperLadderSpeedMultiplier = 5
+	#Iron Ladder speed multiplier.
+	#Range: > 0
+	ironLadderSpeedMultiplier = 10
+	#Golden Ladder speed multiplier.
+	#Range: > 0
+	goldLadderSpeedMultiplier = 15
+	#Diamond Ladder speed multiplier.
+	#Range: > 0
+	diamondLadderSpeedMultiplier = 20
+	#Netherite Ladder speed multiplier.
+	#Range: > 0
+	netheriteLadderSpeedMultiplier = 25
+
+[compatibility-settings]
+	#Will information about the condition of the ladders be shown in the tooltip from Jade?
+	jadeIntegration = true
+	#Will information about the condition of the ladders be shown in the tooltip from Jade?
+	topIntegration = true
+
