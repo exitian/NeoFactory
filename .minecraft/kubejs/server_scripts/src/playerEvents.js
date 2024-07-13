@@ -18,7 +18,7 @@ PlayerEvents.tick((event) => {
 		//gives climate clemency
 		let armorslots = ["feet", "chest", "head", "legs"];
 		let boolSet = [];
-        
+
 		armorslots.forEach((element) => {
 			boolSet.push(
 				event.player.getItemBySlot(element).hasTag("gtceu:ppe_armor")
@@ -60,3 +60,259 @@ ItemEvents.rightClicked("wooden_axe", (event) => {
 	);
 	event.player.sendSystemMessage("Clearing nearby!");
 });
+
+let rTick = 0;
+BlockEvents.rightClicked((event) => {
+	const { player, block } = event;
+	let plank;
+	if (
+		player.mainHandItem.hasTag("minecraft:axes") &&
+		player.mainHandItem != null &&
+		rTick === 0
+	) {
+		let path = block.item.idLocation.path;
+
+		switch (path) {
+			case "stripped_rubber_log":
+				plank = "rubber_planks";
+				break;
+			case "stripped_acacia_log":
+				plank = "acacia_planks";
+				break;
+			case "stripped_birch_log":
+				plank = "birch_planks";
+				break;
+			case "stripped_cherry_log":
+				plank = "cherry_planks";
+				break;
+			case "stripped_dark_oak_log":
+				plank = "dark_oak_planks";
+				break;
+			case "stripped_jungle_log":
+				plank = "jungle_planks";
+				break;
+			case "stripped_mangrove_log":
+				plank = "mangrove_planks";
+				break;
+			case "stripped_oak_log":
+				plank = "oak_planks";
+				break;
+			case "stripped_spruce_log":
+				plank = "spruce_planks";
+				break;
+			case "stripped_crimson_stem":
+				plank = "crimson_planks";
+				break;
+			case "stripped_warped_stem":
+				plank = "warped_planks";
+				break;
+			default:
+				return;
+		}
+		block.popItem(plank);
+		block.popItem(plank);
+		damageToolInHand("main_hand", player.mainHandItem, true, player, 1);
+		event.player.addExhaustion(1.0);
+		block.set("air");
+		rTick++;
+	} else {
+		rTick = 0;
+	}
+});
+
+BlockEvents.rightClicked("gravel", (event) => {
+	let f = Math.random();
+	if (event.player.mainHandItem.empty && event.player.offHandItem.empty) {
+		event.player.swing();
+		let pos = event.block.pos;
+		event.player.runCommandSilent(
+			`playsound minecraft:block.gravel.break block @p ${pos.x} ${
+				pos.y
+			} ${pos.z} 0.5 ${Math.random() + 1} 0.1`
+		);
+		if (f > 0.45 && f < 0.55) {
+			event.block.popItem("flint");
+			event.player.runCommandSilent(
+				`playsound minecraft:block.gravel.break block @p ${pos.x} ${pos.y} ${pos.z} 0.7 0.75 0.1`
+			);
+			event.player.addExhaustion(3.0);
+			event.block.set("air");
+		}
+	}
+});
+
+BlockEvents.broken((event) => {
+	const { player, block } = event;
+	let mhitem;
+	if (
+		block.hasTag("minecraft:logs") &&
+		!player.mainHandItem.hasTag("minecraft:axes") &&
+		!player.isCreative()
+	) {
+		event.player.runCommandSilent(
+			`/title @p subtitle {"text":"You need an axe!","color":"red"}`
+		);
+		event.player.runCommandSilent(`/title @p title ""`);
+		event.cancel(true);
+		return;
+	}
+
+	if (
+		block.hasTag("minecraft:leaves") &&
+		player.mainHandItem.id == "kubejs:sharpened_flint"
+	) {
+		mhitem = player.getItemInHand("main_hand");
+		damageToolInHand("main_hand", mhitem, true, player, 1);
+		if (Math.random() < 0.2) {
+			event.block.popItem("stick");
+		}
+		return;
+	}
+
+	if (
+		(block.id == "minecraft:tall_grass" ||
+			block.id == "minecraft:short_grass") &&
+		player.mainHandItem.id == "gtceu:flint_knife"
+	) {
+		mhitem = player.getItemInHand("main_hand");
+		damageToolInHand("main_hand", mhitem, true, player, 1);
+		if (Math.random() < 0.1) {
+			event.block.popItem("kubejs:cut_grass");
+		}
+		player.sendSystemMessage("yeet");
+	}
+});
+
+let lTick = 0;
+BlockEvents.leftClicked((event) => {
+	const { block, player, item } = event;
+
+	if (
+		block.id == "minecraft:stone" &&
+		lTick == 0 &&
+		player.mainHandItem.id == "minecraft:flint"
+	) {
+		item.setCount(item.getCount() - 1);
+		player.give("kubejs:sharpened_flint");
+		lTick++;
+	} else {
+		lTick = 0;
+	}
+});
+
+function sendMsg(event, data) {
+	event.player.sendSystemMessage(data);
+}
+var l2Tick = 0;
+
+const TABLE_PATTERN = [
+	"minecraft:oak_planks",
+	"minecraft:oak_log",
+	"minecraft:oak_planks",
+	"minecraft:oak_log",
+	"minecraft:oak_log",
+	"minecraft:oak_log",
+	"minecraft:oak_planks",
+	"minecraft:oak_log",
+	"minecraft:oak_planks",
+];
+
+const TABLE_PATTERN_2 = [
+	"minecraft:oak_log",
+	"minecraft:oak_planks",
+	"minecraft:oak_log",
+	"minecraft:oak_planks",
+	"minecraft:oak_log",
+	"minecraft:oak_planks",
+	"minecraft:oak_log",
+	"minecraft:oak_planks",
+	"minecraft:oak_log",
+];
+
+BlockEvents.leftClicked((event) => {
+	if (event.player.mainHandItem.hasTag("minecraft:axes") && l2Tick === 0) {
+		let patternArray = [];
+		let pos = {
+			x: event.block.pos.x,
+			y: event.block.pos.y,
+			z: event.block.pos.z,
+		};
+
+		let range = 1;
+
+		for (let dz = -range; dz <= range; dz++) {
+			for (let dx = -range; dx <= range; dx++) {
+				let blockX = pos.x + dx;
+				let blockY = pos.y;
+				let blockZ = pos.z + dz;
+				patternArray.push(
+					event.level.getBlock(blockX, blockY, blockZ).id
+				);
+			}
+		}
+
+		if (
+			arraysEqual(patternArray, TABLE_PATTERN) ||
+			arraysEqual(patternArray, TABLE_PATTERN_2)
+		) {
+			event.block.popItem("crafting_table");
+			for (let dz = -range; dz <= range; dz++) {
+				for (let dx = -range; dx <= range; dx++) {
+					let blockX = pos.x + dx;
+					let blockY = pos.y;
+					let blockZ = pos.z + dz;
+
+					event.level.getBlock(blockX, blockY, blockZ).set("air");
+				}
+			}
+		}
+		l2Tick++;
+	} else {
+		l2Tick = 0;
+	}
+});
+
+function arraysEqual(arr1, arr2) {
+	if (arr1.length !== arr2.length) {
+		return false;
+	}
+	for (let i = 0; i < arr1.length; i++) {
+		if (arr1[i] !== arr2[i]) {
+			return false;
+		}
+	}
+	return true;
+}
+
+/**
+ *
+ * @param {String} hand "main_hand" or "off_hand".
+ * @param {ItemStack} tool ItemStack of the tool that should break.
+ * @param {boolean} playSound should it play a sound?
+ * @param {Player} player The player.
+ * @param {integer} damageAmount the amount of damage it should apply.
+ */
+function damageToolInHand(hand, tool, playSound, player, damageAmount) {
+	tool.setDamageValue(tool.damageValue + damageAmount);
+	if (tool.getDamageValue() == tool.getMaxDamage()) {
+		player.setItemInHand(hand, "air");
+		if (playSound)
+			player.runCommandSilent(
+				"playsound minecraft:item.shield.break player @p ~ ~ ~ 2 2"
+			);
+	}
+}
+
+EntityEvents.beforeHurt("player", (event) => {
+	const { player, damage, source } = event;
+	if (damage + 1 > player.health && player.health > 6) {
+		if (KILLABLE_SOURCES.some((src) => source.is(src))) event.cancel(true);
+	}
+});
+
+const KILLABLE_SOURCES = [
+	"minecraft:bypasses_effects",
+	"minecraft:bypasses_invulnerability",
+	"minecraft:is_fall",
+	"neoforge:is_technical",
+];

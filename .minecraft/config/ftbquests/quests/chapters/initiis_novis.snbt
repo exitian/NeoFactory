@@ -1,4 +1,5 @@
 {
+	autofocus_id: "1E86D8D33024141D"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "initiis_novis"
@@ -17,7 +18,7 @@
 			}
 			icon_scale: 0.9d
 			id: "1E86D8D33024141D"
-			shape: "heart"
+			shape: "gear"
 			size: 2.0d
 			tasks: [{
 				id: "39E52876956AB33A"
@@ -29,13 +30,23 @@
 		{
 			dependencies: ["1E86D8D33024141D"]
 			id: "520AD437F9B55594"
-			tasks: [{
-				id: "3B175F327A840E29"
-				item: { count: 1, id: "minecraft:flint" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 2.5d
+			tasks: [
+				{
+					id: "3B175F327A840E29"
+					item: { count: 1, id: "minecraft:flint" }
+					type: "item"
+				}
+				{
+					icon: {
+						id: "minecraft:stone"
+					}
+					id: "3F7020620C7C9A3D"
+					item: { }
+					type: "item"
+				}
+			]
+			x: 1.25d
+			y: 1.25d
 		}
 		{
 			dependencies: ["1E86D8D33024141D"]
@@ -74,6 +85,54 @@
 			}]
 			x: -1.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["520AD437F9B55594"]
+			id: "43783B6CBE881EDA"
+			tasks: [
+				{
+					id: "421777155AA40CD5"
+					type: "checkmark"
+				}
+				{
+					id: "6E5D64557F497043"
+					item: { count: 1, id: "kubejs:flint_hatchet" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 1.25d
+		}
+		{
+			dependencies: ["1E86D8D33024141D"]
+			id: "5E9A12896DC6FF09"
+			tasks: [{
+				id: "04AED84A765631F6"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E86D8D33024141D"]
+			id: "46E3734DAACB3C7D"
+			tasks: [{
+				id: "19CE06C46EA4EA13"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["43783B6CBE881EDA"]
+			id: "75DDB881B6EFED0B"
+			tasks: [{
+				id: "252609E1233E6FAF"
+				item: { count: 1, id: "minecraft:crafting_table" }
+				type: "item"
+			}]
+			x: 3.75d
+			y: 1.25d
 		}
 	]
 }

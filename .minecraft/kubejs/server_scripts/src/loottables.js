@@ -5,7 +5,7 @@ const {
 PlayerEvents.inventoryChanged((event) => {
 	if (event.player == null) return;
 
-	if (event.item.isEnchanted) {
+	if (event.item.isEnchanted()) {
 		console.log(event.item.enchantments.keySet().name);
 	}
 

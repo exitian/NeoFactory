@@ -1,26 +1,37 @@
-#Speed of the vanilla minecart.
-#"1.2" is vanilla default maximum speed. High speeds will probably derail the cart.
-#Default: 1.2
+#Speed of the vanilla minecart. Going over 2.0 will probably derail you around corners.
 #Range: 0.5 ~ 20.0
-minecartMaxSpeed = 3.0
+minecartMaxSpeed = 2.0
 #Height of the heart and armor bar offset.
-#Default: 0
 #Range: -50 ~ 50
-leftBarHeightOffset = 6
+leftBarHeightOffset = 0
 #Height of the food bar offset.
-#Default: 0
 #Range: -50 ~ 50
-rightBarHeightOffset = 6
-#Whether to allow the nether portal from building
-#"False" disables forming.
-#Default: true
+rightBarHeightOffset = 0
+#Whether to allow the nether portal from forming.
 allowNetherPortalForming = false
-#Whether to generate large ore nodes.
-#"False" disables the carver-ores.
-#Default: true
+#Whether to generate large copper and iron ore nodes. Might break your world if you toggle this.
 generateLargeOreNodes = true
-#Whether to mute and disable the narrator onboarding on first startup.
-#"True" disables the Narrator.
-#default: true
+#Whether to disable the first Narrator screen on launch. Unless you're developing, probably keep this off.
 disableAccessibilityOnboardingScreen = true
+#Should the tag "#c:death_preventables" be active and allow totems from the inventory.
+enableInventoryTotem = true
+#Should the tag "#c:will_burn_players" be active.
+hotItemsDamagePlayers = true
+#Should the tag "#c:heat_resistant_items" be active.
+itemsFireImmunity = true
+#Disable xp from dropping, commands and the bar. Does not remove XP already obtained.
+disableXP = true
+#Offsetting the AppleSkin food and heart overlay -in pixels- if it's installed.
+#Range: 0 ~ 200
+offsetAppleskin = 0
+#If hostiles should stop spawning. Does not include the Wither and Ender Dragon bosses.
+preventHostiles = true
+#Prevents the ender dragon from spawning. ANY DIFFICULTY
+preventDragonBoss = true
+#Prevents the Wither boss from forming. ANY DIFFICULTY
+preventWitherBossForm = true
+#Prevents the Wither boss from spawning. ANY DIFFICULTY
+preventWitherBossSpawn = true
+#Prevents Slimes from spawning. ANY DIFFICULTY
+preventSlimeSpawn = false
 

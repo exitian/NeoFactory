@@ -2,6 +2,7 @@
 
 const VERBOSE = false;
 const GT = "gtceu";
+const NF = "neofactory";
 
 const WOODTYPES = [
 	"rubber",
@@ -17,6 +18,8 @@ const WOODTYPES = [
 	"warped",
 	"bamboo",
 ];
+
+const NON_HURTING_BOOCK = ["minecraft:dirt", "minecraft:dirt_path"];
 
 // excludes ulv and max
 const VOLTAGE_TIERS = ["lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv"];
@@ -61,6 +64,7 @@ const VANILLA_ID = "minecraft";
 
 // Sorted ascending
 const REMOVE_BY_ID = [
+	"gtceu:shaped/brick_from_water",
 	"foodtxf:wooden_knife_recipe",
 	"foodtxf:stone_knife_recipe",
 	"block_variants:dropper",
@@ -111,6 +115,7 @@ const GAMERULES = [
 	"mobExplosionDropDecay false",
 	"tntExplosionDropDecay false",
 	"playersSleepingPercentage 1",
+	"reducedDebugInfo true",
 ];
 
 // Gregtech defined items to make it faster

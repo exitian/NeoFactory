@@ -329,11 +329,11 @@ tools:
   nanoSaber:
     # The additional damage added when the NanoSaber is powered.
     # Default: 20.0
-    nanoSaberDamageBoost: 30.0
+    nanoSaberDamageBoost: 32.0
 
     # The base damage of the NanoSaber.
     # Default: 5.0
-    nanoSaberBaseDamage: 3.0
+    nanoSaberBaseDamage: 1.0
 
     # Should Zombies spawn with charged, active NanoSabers on hard difficulty?
     # Default: true

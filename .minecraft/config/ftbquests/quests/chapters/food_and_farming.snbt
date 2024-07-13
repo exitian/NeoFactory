@@ -1,0 +1,18 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "food_and_farming"
+	group: "014DAD2F8ACC2792"
+	icon: {
+		id: "foodtxf:cooked_carrot"
+	}
+	id: "11CFC2F2085E3FDE"
+	order_index: 1
+	quest_links: [{
+		id: "71A2DA4FEB32C9A2"
+		linked_quest: "46E3734DAACB3C7D"
+		x: 0.0d
+		y: 0.0d
+	}]
+	quests: [ ]
+}

@@ -1,9 +1,7 @@
 {
-	chapter.6C839709EA3E392F.chapter_subtitle: [
-		"NEW"
-		"BEGINNINGS"
-	]
-	chapter.6C839709EA3E392F.title: "INITIIS NOVIS"
+	chapter.11CFC2F2085E3FDE.title: "Food and Farming"
+	chapter.6C839709EA3E392F.chapter_subtitle: ["BEGINNINGS"]
+	chapter.6C839709EA3E392F.title: "ROCK \\& STONE"
 	chapter_group.014DAD2F8ACC2792.title: "The beginnings"
 	file.0000000000000001.title: "NeoFactory"
 	quest.10888ACC90B6147C.quest_desc: [
@@ -38,6 +36,41 @@
 		"Maybe later even a sensor to automate stuff!"
 	]
 	quest.25F006D521266E3D.quest_subtitle: "Ayup. Gregtech with seasons!"
+	quest.43783B6CBE881EDA.quest_desc: [
+		"Tree's are a bit funky now."
+		""
+		"You probably have noticed that Crafting Tables have changed recipe into 3x3..."
+		""
+		"You probably wanna hit a &53x3x1 log pile&r (left click) at the center with a hatchet."
+		""
+		"At-least every other crafting table is easier.. "
+		""
+		""
+		"{@pagebreak}"
+		""
+		"You can also get 2 wood by stripping a log into stripped logs and then stripping it again!"
+		""
+		"Once you get a &2saw&r or &abuzzsaw&r you don't have to do that anymore."
+	]
+	quest.46E3734DAACB3C7D.title: "Food"
+	quest.520AD437F9B55594.quest_desc: [
+		"You can get flint by right clicking gravel with empty hands."
+		""
+		"It's about a &620%&r chance to get some flint and it does deplete your hunger a bit. So don't spam it!"
+		""
+		"After that, hit the flint with left click onto stone and you get some sharp flint!"
+	]
+	quest.5E9A12896DC6FF09.quest_desc: [
+		"With ExitianTweaks (my own mod!) you'll get some fun things like.."
+		""
+		"No &4hostiles&r but &9hunger&r applies."
+		"EXP is disabled.."
+		"&5Wither and the ender dragon&r are disabled."
+		"&2Slimes&r still spawn!"
+		"&cNether&r and &eEnd&r disabled.."
+		"&6Totem of Undying&r work from the inventory."
+		"&aMinecarts&r are almost twice as fast!"
+	]
 	quest.786FAD970C976F3F.quest_desc: [
 		"Removed are.."
 		""
@@ -48,11 +81,23 @@
 		""
 		""
 		"right..?"
+		""
+		"{@pagebreak}"
+		"Yeah it didn't..."
+		""
+		"It now goes down to &4-192!&r. WorldGen will be slower but at-least you can build up to 512 now!"
+		""
+		"Just be careful as the world-gen is really not vanilla anymore.."
+		""
+		"&bGood luck ;)&r"
 	]
 	quest.786FAD970C976F3F.title: "Vanilla changes"
 	reward_table.18CAAE50795CADFC.title: "lmao"
 	task.02461619E0188941.title: "Seasons"
+	task.04AED84A765631F6.title: "ExitianTweaks"
 	task.0735BD7AE9E18D6D.title: "GregTech"
+	task.19CE06C46EA4EA13.title: "Yep"
 	task.1CDEAEE974B38E4B.title: "Time"
 	task.39E52876956AB33A.title: "Info"
+	task.421777155AA40CD5.title: "Got it!"
 }

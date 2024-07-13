@@ -13,3 +13,23 @@ ServerEvents.recipes((event) => {
 			.id(`${GT}:shaped/${vlt}_assembler`);
 	});
 });
+
+ServerEvents.recipes((event) => {
+	event
+		.shapeless("kubejs:mortar_paste", [
+			"2x #c:dusts/gypsum",
+			"#c:dusts/calcite",
+			"gtceu:stone_dust",
+			"water_bucket",
+		])
+		//.replaceIngredient("#c:buckets/water", "bucket")
+		.id(`${NF}:shaped/mortar_paste`);
+	event
+		.shaped("2x bricks", ["aba", "bcb", "aba"], {
+			a: "brick",
+			b: "kubejs:mortar_paste",
+			c: MLLT,
+		})
+		.damageIngredient("kubejs:mortar_paste", 1)
+		.id(`${NF}:shaped/bricks_with_mortar_paste`);
+});
