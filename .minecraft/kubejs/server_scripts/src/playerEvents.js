@@ -303,16 +303,3 @@ function damageToolInHand(hand, tool, playSound, player, damageAmount) {
 	}
 }
 
-EntityEvents.beforeHurt("player", (event) => {
-	const { player, damage, source } = event;
-	if (damage + 1 > player.health && player.health > 6) {
-		if (KILLABLE_SOURCES.some((src) => source.is(src))) event.cancel(true);
-	}
-});
-
-const KILLABLE_SOURCES = [
-	"minecraft:bypasses_effects",
-	"minecraft:bypasses_invulnerability",
-	"minecraft:is_fall",
-	"neoforge:is_technical",
-];

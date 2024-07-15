@@ -51,9 +51,4 @@ ServerEvents.recipes((event) => {
 		e: "gtceu:iron_screw",
 		f: "gtceu:cupronickel_spring",
 	});
-	event.shaped("crafting_table", ["ab", "cc"], {
-		a: "flint",
-		b: KNVE,
-		c: "#minecraft:logs",
-	});
 });

@@ -14,6 +14,9 @@
 		{
 			disable_toast: true
 			icon: {
+				components: {
+					"minecraft:lore": ["\"lol\""]
+				}
 				id: "minecraft:cherry_sapling"
 			}
 			icon_scale: 0.9d
@@ -51,7 +54,11 @@
 		{
 			dependencies: ["1E86D8D33024141D"]
 			disable_toast: true
+			icon: {
+				id: "sereneseasons:calendar"
+			}
 			id: "25F006D521266E3D"
+			shape: "hexagon"
 			tasks: [{
 				id: "02461619E0188941"
 				optional_task: true
@@ -62,23 +69,33 @@
 		}
 		{
 			dependencies: ["1E86D8D33024141D"]
+			icon: {
+				id: "minecraft:clock"
+			}
 			id: "10888ACC90B6147C"
-			rewards: [{
-				advancement: "minecraft:story/mine_stone"
-				criterion: ""
-				id: "131827FAD3FAEBD4"
-				type: "advancement"
-			}]
-			tasks: [{
-				id: "1CDEAEE974B38E4B"
-				type: "checkmark"
-			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "1CDEAEE974B38E4B"
+					type: "checkmark"
+				}
+				{
+					id: "0DC5BE039D9DE341"
+					item: { count: 1, id: "minecraft:clock" }
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 1.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["1E86D8D33024141D"]
+			icon: {
+				id: "minecraft:grass_block"
+			}
 			id: "786FAD970C976F3F"
+			shape: "hexagon"
 			tasks: [{
 				id: "0735BD7AE9E18D6D"
 				type: "checkmark"
@@ -105,7 +122,11 @@
 		}
 		{
 			dependencies: ["1E86D8D33024141D"]
+			icon: {
+				id: "minecraft:minecart"
+			}
 			id: "5E9A12896DC6FF09"
+			shape: "hexagon"
 			tasks: [{
 				id: "04AED84A765631F6"
 				type: "checkmark"
@@ -115,7 +136,11 @@
 		}
 		{
 			dependencies: ["1E86D8D33024141D"]
+			icon: {
+				id: "solonion:golden_lunchbox"
+			}
 			id: "46E3734DAACB3C7D"
+			shape: "octagon"
 			tasks: [{
 				id: "19CE06C46EA4EA13"
 				type: "checkmark"
@@ -133,6 +158,31 @@
 			}]
 			x: 3.75d
 			y: 1.25d
+		}
+		{
+			dependencies: ["1E86D8D33024141D"]
+			icon: {
+				id: "toughasnails:empty_leather_canteen"
+			}
+			id: "2F4E1BD78DC2DFA3"
+			shape: "hexagon"
+			tasks: [{
+				id: "6907481C3AA3B006"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E86D8D33024141D"]
+			id: "1DE53E62FFCCCBB2"
+			shape: "hexagon"
+			tasks: [{
+				id: "6FA82E5C8D2A1BE7"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
 		}
 	]
 }

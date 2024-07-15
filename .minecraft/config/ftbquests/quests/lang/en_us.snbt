@@ -11,6 +11,18 @@
 		""
 		"Maybe a clock is not a stupid idea either.."
 	]
+	quest.1DE53E62FFCCCBB2.quest_desc: [
+		"All &4shapes&r have a different way of telling their story:"
+		""
+		"The &9gear&r is the starting point per chapter."
+		""
+		"&1Rounded square&r is your default quest. These are the bulk of quests"
+		""
+		"&5Hexagons &rare informational."
+		""
+		"&6Octagons&r are milestones. And unlock new chapters!"
+	]
+	quest.1DE53E62FFCCCBB2.title: "Shapes and sizes"
 	quest.1E86D8D33024141D.quest_desc: [
 		"This pack changes quite a few things. Here's a neatly organized list of things to expect."
 		""
@@ -36,14 +48,34 @@
 		"Maybe later even a sensor to automate stuff!"
 	]
 	quest.25F006D521266E3D.quest_subtitle: "Ayup. Gregtech with seasons!"
+	quest.2F4E1BD78DC2DFA3.quest_desc: [
+		"This world is not inhabited by hostiles. But that doesn't mean you won't need food or shelter."
+		""
+		"&4Tough as Nails&r and &bSerene Seasons&r will keep you on your toes."
+		""
+		"Winter comes by and might mess with you. So make sure you make gear that heats or cools you!"
+		""
+		"The following chapter for &6Heat&r and &bCold&r"
+	]
+	quest.2F4E1BD78DC2DFA3.title: "Thirst, heat and death"
 	quest.43783B6CBE881EDA.quest_desc: [
 		"Tree's are a bit funky now."
 		""
 		"You probably have noticed that Crafting Tables have changed recipe into 3x3..."
 		""
-		"You probably wanna hit a &53x3x1 log pile&r (left click) at the center with a hatchet."
+		"You probably wanna hit a &53x1x3 log pile&r (left clic) at the center with any axe. You really only need to do this once. If at all."
 		""
-		"At-least every other crafting table is easier.. "
+		"Pattern:"
+		"TODO: Replace with image once openloader is updated."
+		""
+		"&6LPL      PLP&r"
+		"&6PLP &fOR&6  LLL&r&r  Where \"L\" is any log"
+		"&6LPL      PLP&r  and \"P\" is any plank."
+		""
+		""
+		"Once you get some tools they become easier. Also villages have them too!"
+		""
+		""
 		""
 		""
 		"{@pagebreak}"
@@ -52,6 +84,7 @@
 		""
 		"Once you get a &2saw&r or &abuzzsaw&r you don't have to do that anymore."
 	]
+	quest.43783B6CBE881EDA.title: "Wood \\& Crafting"
 	quest.46E3734DAACB3C7D.title: "Food"
 	quest.520AD437F9B55594.quest_desc: [
 		"You can get flint by right clicking gravel with empty hands."
@@ -60,6 +93,7 @@
 		""
 		"After that, hit the flint with left click onto stone and you get some sharp flint!"
 	]
+	quest.520AD437F9B55594.title: "Flint \\& beginner tools"
 	quest.5E9A12896DC6FF09.quest_desc: [
 		"With ExitianTweaks (my own mod!) you'll get some fun things like.."
 		""
@@ -70,6 +104,16 @@
 		"&cNether&r and &eEnd&r disabled.."
 		"&6Totem of Undying&r work from the inventory."
 		"&aMinecarts&r are almost twice as fast!"
+	]
+	quest.75DDB881B6EFED0B.quest_desc: [
+		"Your first crafting table!"
+		""
+		"You'll need it. As there's barely any 2x2 recipes left."
+		""
+		"Don't forget to read all the pages on these quests btw..."
+		""
+		"{@pagebreak}"
+		"Not this one silly. The previous ones."
 	]
 	quest.786FAD970C976F3F.quest_desc: [
 		"Removed are.."
@@ -99,5 +143,4 @@
 	task.19CE06C46EA4EA13.title: "Yep"
 	task.1CDEAEE974B38E4B.title: "Time"
 	task.39E52876956AB33A.title: "Info"
-	task.421777155AA40CD5.title: "Got it!"
 }
