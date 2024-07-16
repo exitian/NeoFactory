@@ -1,0 +1,13 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storage"
+	group: "014DAD2F8ACC2792"
+	icon: {
+		id: "minecraft:chest"
+	}
+	id: "7B5FF6B407BA431C"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+}

@@ -1,0 +1,22 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "seasons__heat"
+	group: "014DAD2F8ACC2792"
+	id: "20E88799600C09F0"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		dependencies: [
+			"25F006D521266E3D"
+			"2F4E1BD78DC2DFA3"
+		]
+		id: "4AE8C2F5B087FEB4"
+		tasks: [{
+			id: "7BDCB37238B86CAD"
+			type: "checkmark"
+		}]
+		x: 0.25d
+		y: -0.25d
+	}]
+}

@@ -18,12 +18,7 @@ ServerEvents.recipes((event) => {
 // Crafting table
 ServerEvents.recipes((event) => {
 	event
-		.shapeless("kubejs:mortar_paste", [
-			"2x #c:dusts/gypsum",
-			"#c:dusts/calcite",
-			"gtceu:stone_dust",
-			"water_bucket",
-		])
+		.shapeless("kubejs:mortar_paste", ["2x #c:dusts/gypsum", "#c:dusts/calcite", "gtceu:stone_dust", "water_bucket"])
 		//.replaceIngredient("#c:buckets/water", "bucket")
 		.id(`${NF}:shaped/mortar_paste`);
 	event
@@ -61,8 +56,7 @@ ServerEvents.recipes((event) => {
 	let electric_blast_furnace = event.recipes.gtceu.electric_blast_furnace;
 	let electric_furnace = event.recipes.gtceu.electric_furnace;
 	let electrolyzer = event.recipes.gtceu.electrolyzer;
-	let electromagnetic_separator =
-		event.recipes.gtceu.electromagnetic_separator;
+	let electromagnetic_separator = event.recipes.gtceu.electromagnetic_separator;
 	let evaporation = event.recipes.gtceu.evaporation;
 	let extractor = event.recipes.gtceu.extractor;
 	let extruder = event.recipes.gtceu.extruder;
@@ -105,12 +99,7 @@ ServerEvents.recipes((event) => {
 		.durationIsTotalCWU(true);
 
 	assembler(`${GT}:assembler/crafting_table_octo`)
-		.inputItems([
-			"64x oak_planks",
-			"64x oak_planks",
-			"64x oak_planks",
-			"64x oak_planks",
-		])
+		.inputItems(["64x oak_planks", "64x oak_planks", "64x oak_planks", "64x oak_planks"])
 		.outputItems("64x crafting_table")
 		.EUt(8192)
 		.duration(2 * TICK)

@@ -1,0 +1,10 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "zpm"
+	group: "5B87A71FF198D07B"
+	id: "33E86E559AEB50E2"
+	order_index: 6
+	quest_links: [ ]
+	quests: [ ]
+}

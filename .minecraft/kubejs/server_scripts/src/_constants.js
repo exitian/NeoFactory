@@ -5,20 +5,7 @@ const GT = "gtceu";
 const NF = "neofactory";
 const TICK = 20;
 
-const WOODTYPES = [
-	"rubber",
-	"acacia",
-	"birch",
-	"cherry",
-	"dark_oak",
-	"jungle",
-	"mangrove",
-	"oak",
-	"spruce",
-	"crimson",
-	"warped",
-	"bamboo",
-];
+const WOODTYPES = ["rubber", "acacia", "birch", "cherry", "dark_oak", "jungle", "mangrove", "oak", "spruce", "crimson", "warped", "bamboo"];
 
 const NON_HURTING_BOOCK = ["minecraft:dirt", "minecraft:dirt_path"];
 
@@ -102,10 +89,7 @@ const REMOVE_BY_ID = [
 	"minecraft:waxed_copper_door_from_honeycomb",
 ];
 
-const REMOVE_BY_REGEX = [
-	/minecraft:(\w+trapdoor)(\w+)?/,
-	/utilitarian:utility\/\w+/,
-];
+const REMOVE_BY_REGEX = [/minecraft:(\w+trapdoor)(\w+)?/];
 
 const REMOVE_BY_MOD = ["bigger_ae2"];
 
@@ -132,12 +116,7 @@ const SCRD = "#c:tools/screwdrivers";
 const WRCT = "#c:tools/wire_cutters";
 const WRNC = "#c:tools/wrench";
 
-const HOT_ARMOR = [
-	"gtceu:hazmat_boots",
-	"gtceu:hazmat_leggings",
-	"gtceu:hazmat_headpiece",
-	"gtceu:hazmat_chestpiece",
-];
+const HOT_ARMOR = ["gtceu:hazmat_boots", "gtceu:hazmat_leggings", "gtceu:hazmat_headpiece", "gtceu:hazmat_chestpiece"];
 
 const COOL_ARMOR = [];
 

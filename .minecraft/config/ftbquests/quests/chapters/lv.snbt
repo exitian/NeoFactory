@@ -1,0 +1,13 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "lv"
+	group: "5B87A71FF198D07B"
+	icon: {
+		id: "gtceu:steel_ingot"
+	}
+	id: "3CF01B2715839A5B"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+}

@@ -3,7 +3,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "initiis_novis"
-	group: "014DAD2F8ACC2792"
+	group: ""
 	icon: {
 		id: "minecraft:oak_sapling"
 	}
@@ -43,9 +43,11 @@
 					icon: {
 						id: "minecraft:stone"
 					}
-					id: "3F7020620C7C9A3D"
-					item: { }
-					type: "item"
+					id: "4101938027381839"
+					observe_type: 0
+					timer: 0L
+					to_observe: "minecraft:stone"
+					type: "observation"
 				}
 			]
 			x: 1.25d
@@ -53,7 +55,6 @@
 		}
 		{
 			dependencies: ["1E86D8D33024141D"]
-			disable_toast: true
 			icon: {
 				id: "sereneseasons:calendar"
 			}
@@ -137,14 +138,22 @@
 		{
 			dependencies: ["1E86D8D33024141D"]
 			icon: {
-				id: "solonion:golden_lunchbox"
+				id: "foodtxf:golden_bread"
 			}
 			id: "46E3734DAACB3C7D"
 			shape: "octagon"
-			tasks: [{
-				id: "19CE06C46EA4EA13"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "46940C3344F27928"
+					item: { count: 1, id: "solonion:lunchbag" }
+					type: "item"
+				}
+				{
+					id: "00E4DC4439A6C197"
+					item: { count: 1, id: "foodtxf:toasted_bread" }
+					type: "item"
+				}
+			]
 			x: -1.5d
 			y: 1.5d
 		}
@@ -183,6 +192,41 @@
 			}]
 			x: 0.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["75DDB881B6EFED0B"]
+			id: "45B8E42B7C759FD8"
+			tasks: [
+				{
+					id: "7502CDC4969F7ABE"
+					item: { components: { "gtceu:gt_tool": { attack_damage: 2.5f, harvest_level: 2, tool_speed: 5.5f } }, count: 1, id: "gtceu:flint_shovel" }
+					type: "item"
+				}
+				{
+					id: "17FBAEB87AFD486D"
+					item: { components: { "gtceu:gt_tool": { attack_damage: 6.0f, harvest_level: 2, tool_speed: 3.5f } }, count: 1, id: "gtceu:flint_axe" }
+					type: "item"
+				}
+				{
+					id: "16E037647AC7D9F1"
+					item: { components: { "gtceu:gt_tool": { attack_damage: 2.0f, harvest_level: 2, tool_speed: 5.5f } }, count: 1, id: "gtceu:flint_pickaxe" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 1.25d
+		}
+		{
+			dependencies: ["45B8E42B7C759FD8"]
+			id: "610EBF0C1CC152C8"
+			shape: "octagon"
+			tasks: [{
+				id: "1EC89F045BD3B752"
+				item: { count: 1, id: "minecraft:chest" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
 		}
 	]
 }

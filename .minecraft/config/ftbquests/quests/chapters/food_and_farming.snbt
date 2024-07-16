@@ -3,16 +3,46 @@
 	default_quest_shape: ""
 	filename: "food_and_farming"
 	group: "014DAD2F8ACC2792"
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_visible: true
 	icon: {
 		id: "foodtxf:cooked_carrot"
 	}
 	id: "11CFC2F2085E3FDE"
-	order_index: 1
+	order_index: 0
 	quest_links: [{
+		icon: {
+			id: "foodtxf:golden_bread"
+		}
 		id: "71A2DA4FEB32C9A2"
 		linked_quest: "46E3734DAACB3C7D"
+		shape: "gear"
+		size: 2.0d
 		x: 0.0d
 		y: 0.0d
 	}]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["46E3734DAACB3C7D"]
+			id: "074790D467EFC4B4"
+			tasks: [{
+				id: "095B426960834884"
+				item: { count: 1, id: "solonion:lunchbox" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["074790D467EFC4B4"]
+			id: "69967670E5457A28"
+			tasks: [{
+				id: "534F2593A032F68E"
+				item: { count: 1, id: "solonion:golden_lunchbox" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.75d
+		}
+	]
 }

@@ -1,0 +1,13 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mv"
+	group: "5B87A71FF198D07B"
+	icon: {
+		id: "gtceu:aluminium_ingot"
+	}
+	id: "4802EFF90AECE5D8"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+}
