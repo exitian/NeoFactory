@@ -17,8 +17,6 @@ PlayerEvents.chat((event) => {
 	}
 });
 
-PlayerEvents
-
 const DEV_WORLD_COMMANDS = [
 	"/gamerule doDaylightCycle false",
 	"/gamerule doSeasonCycle false",

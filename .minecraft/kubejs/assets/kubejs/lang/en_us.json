@@ -1,3 +1,10 @@
 {
-	"item.kubejs.mortar_paste": "Mortar Paste"
+	"block.kubejs.compressed_crafting_table": "Compressed Crafting Table",
+
+	"item.kubejs.mortar_paste": "Mortar Paste",
+	"item.kubejs.sharpened_flint": "Sharpened Flint",
+	"item.kubejs.cut_grass": "Cut Grass",
+	"item.kubejs.grass_rope": "Grass Rope",
+
+	"item.kubejs.flint_hatchet": "Flint Hatchet"
 }

@@ -1,0 +1,16 @@
+{
+	"0aisle:": "(\"#AAA#\", \"#BBB#\", \"#BBB#\", \"#B#B#\", \"#####\")",
+	"1aisle:": "(\"CAAAA\", \"BDEDB\", \"BDEDB\", \"BDBDB\", \"#B#B#\")",
+	"2aisle:": "(\"AAAAA\", \"FEAEB\", \"BEAEB\", \"#BBB#\", \"#####\")",
+	"3aisle:": "(\"AAAAA\", \"BDEDB\", \"BDEDB\", \"BDBDB\", \"#B#B#\")",
+	"4aisle:": "(\"#GAH#\", \"#BBB#\", \"#BBB#\", \"#B#B#\", \"#####\")",
+	"#": "minecraft:air",
+	"A": "gtceu:bronze_firebox_casing",
+	"B": "gtceu:steam_machine_casing",
+	"C": "gtceu:steam_input_hatch",
+	"D": "gtceu:bronze_pipe_casing",
+	"E": "gtceu:firebricks",
+	"F": "gtceu:industrial_steam_casing",
+	"G": "gtceu:steam_input_bus",
+	"H": "gtceu:steam_output_bus",
+}

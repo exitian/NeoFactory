@@ -1,0 +1,11 @@
+{
+	"0aisle:": "(\"AAAAA\", \"BBABB\", \"BBABB\", \"BBABB\", \"AAAAA\")",
+	"1aisle:": "(\"AAAAA\", \"B#C#B\", \"B#C#B\", \"B#C#B\", \"AAAAA\")",
+	"2aisle:": "(\"AAAAA\", \"BCCCB\", \"BC#CB\", \"BCCCB\", \"AAAAA\")",
+	"3aisle:": "(\"AAAAA\", \"B#C#B\", \"B#C#B\", \"B#C#B\", \"AAAAA\")",
+	"4aisle:": "(\"AAAAA\", \"BBABB\", \"BBABB\", \"BBABB\", \"AAAAA\")",
+	"A": "gtceu:heatproof_machine_casing",
+	"B": "gtceu:cupronickel_coil_block",
+	"#": "minecraft:air",
+	"C": "gtceu:steel_pipe_casing"
+}
