@@ -14,49 +14,21 @@ StartupEvents.registry("item", (event) => {
 
 	event.create("cut_grass").maxStackSize(16).displayName({ translate: "kubejs.item.generic.cut_grass" });
 	event.create("grass_rope").maxStackSize(16).displayName({ translate: "kubejs.item.generic.grass_rope" });
-
 });
 
-/* StartupEvents.registry("item", (event) => {
-	event.create("token_micro_universe").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-
-	//further intermediary
-	event.create("token_galaxy").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_nebula").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-
-	// what is available in a galaxy
-	event.create("token_galaxy_center").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_solar_system").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_main_sequence_star").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_neutron_star").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_terrestrial_planet").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_gas_planet").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_ores").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_stone").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_fluids").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_planet_core").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
-	event.create("token_").maxStackSize(64).displayName({ translate: "kubejs.item.tokens." });
+StartupEvents.registry("item", (event) => {
+	event.create("token_micro_universe").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.micro_universe" });
+	event.create("token_universe").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.universe" });
+	event.create("token_galaxy_cluster").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.galaxy_cluster" });
+	event.create("token_galaxy").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.galaxy" });
+	event.create("token_star_system").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.star_system" });
+	event.create("token_star").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.star" });
+	event.create("token_planet").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.planet" });
+	event.create("token_moon").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.moon" });
+	event.create("token_asteroid").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.asteroid" });
+	event.create("token_comet").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.comet" });
+	event.create("token_black_hole").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.black_hole" });
+	event.create("token_nebula").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.nebula" });
+	event.create("token_galactic_cloud").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.galactic_cloud" });
+	event.create("token_galactic_waste").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.galactic_waste" });
 });
- */
