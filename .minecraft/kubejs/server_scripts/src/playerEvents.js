@@ -166,7 +166,7 @@ function sendMsg(event, data) {
 
 var l2Tick = 0;
 
-BlockEvents.leftClicked((event) => {
+BlockEvents.broken((event) => {
 	if (event.player.mainHandItem.hasTag("minecraft:axes") && l2Tick === 0 && event.block.hasTag("minecraft:logs")) {
 		let patternArray = [];
 

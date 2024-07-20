@@ -37,6 +37,7 @@
 				{
 					id: "3B175F327A840E29"
 					item: { count: 1, id: "minecraft:flint" }
+					match_components: "fuzzy"
 					type: "item"
 				}
 				{
@@ -48,6 +49,11 @@
 					timer: 0L
 					to_observe: "minecraft:stone"
 					type: "observation"
+				}
+				{
+					id: "614944A6B21F65C5"
+					item: { count: 1, id: "minecraft:stripped_oak_log" }
+					type: "item"
 				}
 			]
 			x: 1.25d

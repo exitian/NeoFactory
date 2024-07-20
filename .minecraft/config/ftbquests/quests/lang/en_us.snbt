@@ -18,6 +18,16 @@
 	chapter_group.5B87A71FF198D07B.title: "Electric"
 	chapter_group.5C7675F26508C02E.title: "Steam"
 	file.0000000000000001.title: "NeoFactory"
+	quest.011A4894D61EABEF.quest_desc: [
+		"The most rudimentary and barebones as it gets system."
+		""
+		"It's not automatable. And it's &ofairly&r cheap."
+		""
+		"But it'll not be as easy to work with as it really only allows you to just have a basic system for manual crafting."
+		""
+		"&4No autocrafting&r, &dwireless terminals&r, &1etc.&r"
+	]
+	quest.011A4894D61EABEF.title: "Your first storage!"
 	quest.074790D467EFC4B4.quest_desc: [
 		"An upgraded lunchbag!"
 		""
@@ -85,6 +95,14 @@
 		"Maybe later even a sensor to automate stuff!"
 	]
 	quest.25F006D521266E3D.quest_subtitle: "Ayup. Gregtech with seasons!"
+	quest.2E941445E8279015.quest_desc: [
+		"These are fun! Especially if you played older minecraft versions.."
+		""
+		"Mainly because they are full blocks and not tile-chests. Which means they're less laggy!"
+		""
+		"You can also always convert between &6tile&r and &efull block&r chests."
+	]
+	quest.2E941445E8279015.title: "I rember.."
 	quest.2F4E1BD78DC2DFA3.quest_desc: [
 		"This world is not inhabited by hostiles. But that doesn't mean you won't need food or shelter."
 		""
@@ -124,6 +142,7 @@
 	quest.43783B6CBE881EDA.title: "Wood \\& Crafting"
 	quest.46E3734DAACB3C7D.quest_desc: ["You probably want a lunchbag. It'll make this easier. Overtime more options are available with bigger inventories!"]
 	quest.46E3734DAACB3C7D.title: "Food"
+	quest.49EBF4D74198F419.title: "Larger Chests!"
 	quest.520AD437F9B55594.quest_desc: [
 		"You can get flint by right clicking gravel with empty hands."
 		""
@@ -174,10 +193,12 @@
 	]
 	quest.786FAD970C976F3F.title: "World generation \\& terrain"
 	reward_table.18CAAE50795CADFC.title: "lmao"
+	reward_table.7675AA347B891C25.title: "iron_chests"
 	task.02461619E0188941.title: "Seasons"
 	task.04AED84A765631F6.title: "ExitianTweaks"
 	task.0735BD7AE9E18D6D.title: "GregTech"
 	task.1CDEAEE974B38E4B.title: "Time"
+	task.20714C09A10AE5C8.title: "Any #c:iron_chests"
 	task.39E52876956AB33A.title: "Info"
 	task.3B175F327A840E29.title: "Flint"
 }

@@ -1,0 +1,9 @@
+{
+	id: "7675AA347B891C25"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ item: { count: 1, id: "expandedstorage:iron_chest" } }
+		{ item: { count: 1, id: "expandedstorage:old_iron_chest" } }
+	]
+}

@@ -34,7 +34,7 @@ function sendMsg(event, data) {
 }
 
 BlockEvents.broken((event) => {
-	if (event.player.mainHandItem.id === "minecraft:stone_axe") {
+	if (event.player.mainHandItem.id === "minecraft:stone_axe" && event.player.isCreative()) {
 		pos2 = { x: event.block.x, y: event.block.y, z: event.block.z };
 
 		event.player.sendSystemMessage(

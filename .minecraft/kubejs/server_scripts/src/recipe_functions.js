@@ -45,3 +45,10 @@
 
 	block.set("air");
 }); */
+BlockEvents.randomTick("kubejs:clay_brick", (event) => {
+	let { block } = event;
+	if (Math.random() > 0 && block.canSeeSky() && block.down.blockState.solid) {
+		block.popItem("minecraft:brick");
+		block.set("air");
+	}
+});
