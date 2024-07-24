@@ -1,8 +1,10 @@
 # FOLDERS
+!mods/exitiantweaks-1.0.0.jar
 .mixin.out/
 .probe/
 .vscode/
 backups/
+config/worldedit
 coremods/
 crash-reports/
 debug/
@@ -12,14 +14,13 @@ journeymap/
 local/
 logs/
 mods/*
-!mods/exitiantweaks-1.0.0.jar
 resourcepacks/
 saves/
 screenshots/
 server-resource-packs/
 shaderpacks/
+config/spark/
 texturepacks/
-config/worldedit
 
 # TODO:
 # implement default minemenu
@@ -37,11 +38,11 @@ usernamecache.json
 
 # ignore client-side configs
 # Also to not override client options on updating
+.probe
 **/config/**/*[cC][lL][iI][eE][nN][tT]*.*
 config/ctm.toml
 config/embeddium*
 config/emi.css
+config/entityculling.json
 config/NoChatReports/NCR-Encryption.json
 config/packetfixer.properties
-config/entityculling.json
-.probe

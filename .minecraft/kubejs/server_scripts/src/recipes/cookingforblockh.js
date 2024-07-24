@@ -1,9 +1,6 @@
 ServerEvents.recipes((event) => {
 	event
-		.shapeless("cookingforblockheads:cutting_board", [
-			"foodtxf:cutting_board",
-			"gtceu:stainless_steel_butchery_knife",
-		])
+		.shapeless("cookingforblockheads:cutting_board", ["foodtxf:cutting_board", "gtceu:stainless_steel_butchery_knife"])
 		.id("cookingforblockheads:cutting_board");
 
 	event

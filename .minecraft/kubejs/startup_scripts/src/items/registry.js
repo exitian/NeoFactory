@@ -6,29 +6,64 @@ ItemEvents.toolTierRegistry((event) => {
 	});
 });
 
-// normal items
+const CIRCUITS_REGISTRY = [
+	{ path: "uhv_t1_circuit", tag: "gtceu:circuits/uhv", stack: 64 },
+	{ path: "uev_t1_circuit", tag: "gtceu:circuits/uev", stack: 64 },
+	{ path: "uiv_t1_circuit", tag: "gtceu:circuits/uiv", stack: 64 },
+	{ path: "uxv_t1_circuit", tag: "gtceu:circuits/uxv", stack: 64 },
+	{ path: "opv_t1_circuit", tag: "gtceu:circuits/opv", stack: 64 },
+	{ path: "max_t1_circuit", tag: "gtceu:circuits/max", stack: 64 },
+];
+
+const BASIC_ITEMS_REGISTRY = [
+	//base items
+	{ path: "cut_grass", stack: 16, dmg: 0 },
+	{ path: "grass_rope", stack: 16, dmg: 0 },
+	{ path: "dried_clay_brick", stack: 16, dmg: 0 },
+	// tokens
+	{ path: "token_micro_universe", stack: 64, dmg: 0 },
+	{ path: "token_universe", stack: 64, dmg: 0 },
+	{ path: "token_galaxy_cluster", stack: 64, dmg: 0 },
+	{ path: "token_galaxy", stack: 64, dmg: 0 },
+	{ path: "token_star_system", stack: 64, dmg: 0 },
+	{ path: "token_star", stack: 64, dmg: 0 },
+	{ path: "token_planet", stack: 64, dmg: 0 },
+	{ path: "token_moon", stack: 64, dmg: 0 },
+	{ path: "token_asteroid", stack: 64, dmg: 0 },
+	{ path: "token_comet", stack: 64, dmg: 0 },
+	{ path: "token_black_hole", stack: 64, dmg: 0 },
+	{ path: "token_nebula", stack: 64, dmg: 0 },
+	{ path: "token_galactic_cloud", stack: 64, dmg: 0 },
+	{ path: "token_galactic_waste", stack: 64, dmg: 0 },
+];
+
 StartupEvents.registry("item", (event) => {
+	CIRCUITS_REGISTRY.forEach((element) => {
+		event
+			.create(element.path)
+			.maxStackSize(element.stack)
+			.tag(element.tag)
+			.displayName({ translate: "kubejs.item.generic." + element.path });
+	});
+
+	BASIC_ITEMS_REGISTRY.forEach((element) => {
+		if (element.dmg === 0 || element.dmg === null) {
+			event
+				.create(element.path)
+				.maxStackSize(element.stack)
+				.displayName({ translate: "kubejs.item.generic." + element.path });
+		} else {
+			event
+				.create(element.path)
+				.maxStackSize(1)
+				.maxDamage(element.dmg)
+				.displayName({ translate: "kubejs.item.generic." + element.path });
+		}
+	});
+
 	event.create("mortar_paste").maxStackSize(1).maxDamage(6).displayName({ translate: "kubejs.item.generic.mortar_paste" });
 	event.create("sharpened_flint").maxStackSize(1).maxDamage(9).displayName({ translate: "kubejs.item.generic.sharpened_flint" });
 	event.create("flint_hatchet", "axe").tier("flint").tag("minecraft:axes").displayName({ translate: "kubejs.item.generic.flint_hatchet" });
-
-	event.create("cut_grass").maxStackSize(16).displayName({ translate: "kubejs.item.generic.cut_grass" });
-	event.create("grass_rope").maxStackSize(16).displayName({ translate: "kubejs.item.generic.grass_rope" });
 });
 
-StartupEvents.registry("item", (event) => {
-	event.create("token_micro_universe").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.micro_universe" });
-	event.create("token_universe").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.universe" });
-	event.create("token_galaxy_cluster").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.galaxy_cluster" });
-	event.create("token_galaxy").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.galaxy" });
-	event.create("token_star_system").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.star_system" });
-	event.create("token_star").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.star" });
-	event.create("token_planet").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.planet" });
-	event.create("token_moon").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.moon" });
-	event.create("token_asteroid").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.asteroid" });
-	event.create("token_comet").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.comet" });
-	event.create("token_black_hole").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.black_hole" });
-	event.create("token_nebula").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.nebula" });
-	event.create("token_galactic_cloud").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.galactic_cloud" });
-	event.create("token_galactic_waste").maxStackSize(64).displayName({ translate: "kubejs.item.tokens.galactic_waste" });
-});
+StartupEvents.registry("item", (event) => {});

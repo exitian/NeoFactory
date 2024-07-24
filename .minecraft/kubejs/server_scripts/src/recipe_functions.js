@@ -45,10 +45,22 @@
 
 	block.set("air");
 }); */
-BlockEvents.randomTick("kubejs:clay_brick", (event) => {
+
+BlockEvents.placed("kubejs:clay_brick", (event) => {
+	if (!event.block.down.blockState.solid) {
+		event.block.popItem("kubejs:clay_brick");
+		event.block.set("air");
+	}
+});
+
+BlockEvents.blockEntityTick("kubejs:clay_brick", (event) => {
 	let { block } = event;
-	if (Math.random() > 0 && block.canSeeSky() && block.down.blockState.solid) {
-		block.popItem("minecraft:brick");
+
+	if (block.getCanSeeSky() && block.down.blockState.solid && event.cycle > 90) {
+		block.getPlayersInRadius(8).forEach((player) => {
+			player.runCommandSilent(`playsound minecraft:block.lava.pop ambient @p[distance=0..4] ${block.pos.x} ${block.pos.y} ${block.pos.z} 1 2`);
+		});
+		block.popItem("kubejs:dried_clay_brick");
 		block.set("air");
 	}
 });
